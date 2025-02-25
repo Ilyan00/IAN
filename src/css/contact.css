@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+    font-family: "Raleway", serif;
+}
 
 body {
     color: #BF0F3D;
+    margin: 0;
+    padding: 0;
 }
 
 .section_contact {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .title_contact {
@@ -20,7 +27,7 @@ body {
 }
 
 .content_contact {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .big_text {
@@ -31,4 +38,71 @@ body {
 .text {
     margin-top: 7px;
     padding-top: 0;
+}
+
+.section_form {
+    background-color: #BF0F3D;
+    color: white;
+    padding: 15px;
+    height: 50rem;
+    display: flex;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+input {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 0;
+}
+
+#sujet {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#content {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 0;
+    height: 218px;
+}
+
+#itineraire {
+    margin-top: 15px;
+}
+
+#checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: large;
+}
+
+#bouton_itineraire {
+    margin-top: 15px;
+    padding: 15px 25px 15px 25px;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    background-color: transparent;
+    border: 3px solid white;
+}
+
+#submit {
+    margin-top: 15px;
+    padding: 15px 25px 15px 25px;
+    border-radius: 50px;
+    color:#BF0F3D;
+    background-color: white;
+    font-weight: bold;
+    font-size: large;
 }

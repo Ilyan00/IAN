@@ -7,15 +7,20 @@
     <title>Formulaire de contact</title>
 </head>
 <body>
-    <section class="section_contact">
+    <section class="section_contact" aria-atomic="true">
         <h1 class="title_contact">Contact</h1>
         <h4 class="content_contact big_text">Musée Grévin Paris,</h4>
         <p class="content_contact text">10, boulevard Montmartre 75009 Paris</p>
         <h4 class="content_contact big_text">Besoin d'aide ? 01 47 70 85 05</h4>
         <p class="content_contact text">Du lundi au dimanche de 9h à 12h30 et de 13h30 à 17h.</p>
     </section>
+
     <section class="section_form">
-        <form action="" method="post">
+        <div id="itineraire">
+            <img src="../src/img/map-grevin-transparent-generic.png" alt="Map de l'emplacement du musée Grevin">
+            <button id="bouton_itineraire">Itinéraire</button>
+        </div>
+        <form action="" method="post" id="form">
             <select name="Sujet" id="sujet" aria-placeholder="Sujet">
                 <option value="sujet" aria-placeholder="Sujet">
                     Sujet
@@ -46,7 +51,19 @@
                 </option>
             </select>
             <input id="email" type="email" aria-required="true" placeholder="Votre courriel">
-            <input id="content" type="text" aria-required="true" placeholder="Votre message ...">
+            <textarea id="content" placeholder="Votre message ..." aria-required="true"></textarea>
+
+            <div id="checkbox">
+                <div>
+                    <input type="checkbox" id="confidentialite" name="confidentialite" value="yes">
+                    <label for="confidentialite">En remplissant ce formulaire de contact, vous reconnaissez que vous avez lu et accepté notre politique de confidentialité relative à l'utilisation de vos donnéees personnelles.</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    <label for="newsletter">J'accepte de recevoir les Newsletter de Grévin Paris</label>
+                </div>
+            </div>
+            <input id="submit" type="submit" value="Envoyer">
         </form>
     </section>
 </body>
