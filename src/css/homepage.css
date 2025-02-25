@@ -3,6 +3,7 @@
   display: grid;
   background-color: #bf0f3d;
   grid-template-columns: repeat(2, 1fr);
+  margin-top: 120px;
 }
 .medio-block-info {
   display: flex;
@@ -66,4 +67,98 @@
   overflow: hidden;
   height: 100%;
   width: 100%;
+}
+
+/* offer section */
+.offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0;
+}
+.offer h2 {
+  text-align: center;
+  color: #cba210;
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+.offer-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  width: 75%;
+  box-shadow: 0px 0px 20px 8px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+}
+.offer-image {
+  grid-column: 1 / 4;
+  height: 100%;
+  border-radius: 20px 0 0 20px;
+  overflow: hidden;
+}
+.offer-text-container {
+  display: flex;
+  gap: 30px;
+  grid-column: 4/6;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-title {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.text-title h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.text-title p {
+  width: 50%;
+  opacity: 80%;
+  font-size: 0.9rem;
+}
+.fa-hat-wizard {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #bf0f3d;
+}
+.price-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.price-p {
+  font-weight: bold;
+}
+.price-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #bf0f3d;
+  margin-top: -1rem;
+}
+.price-person {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #bf0f3d;
+  margin-top: -1rem;
+}
+.price-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #bf0f3d;
+  color: #fff;
+  border-radius: 100px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 20px;
 }
