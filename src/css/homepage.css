@@ -197,22 +197,40 @@
   line-height: 1.5;
   text-align: center;
 }
-.contact-container a {
+.contact-container hr {
+  width: 80%;
+  border: 1px solid #bf0f3d;
+}
+.btn-contact-container {
   background-color: #bf0f3d;
-  color: #fff;
-  padding: 15px 25px;
+  width: 20%;
+  height: 50px;
   border-radius: 100px;
   cursor: pointer;
-  text-transform: uppercase;
   position: relative;
+  overflow: hidden;
 }
-.contact-container .test {
+.btn-contact-container a {
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+.btn-contact-container i {
   position: absolute;
   transition: all 0.2s ease;
   transform: translate(-50%, -50%);
-  right: -20%;
+  right: -120%;
   top: 50%;
 }
-.contact-container a:hover .test {
-  right: 8%;
+.btn-contact-container:hover i {
+  right: -35%;
+}
+.btn-contact-container:hover {
+  box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 20%);
+}
+.btn-contact-container a:focus i {
+  right: -35%;
 }
