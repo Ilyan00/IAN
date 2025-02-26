@@ -1,134 +1,275 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/css/contact.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/css/contact.css" />
     <script
       src="https://kit.fontawesome.com/ec35368b02.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="icon" href="./img/icone.png" type="image/png" />
     <title>Formulaire de contact</title>
-</head>
-<body>
+  </head>
+  <body>
+    <input
+      type="text"
+      style="position: absolute; opacity: 0; pointer-events: none"
+      autofocus
+    />
+    <a tabindex="1" href="#contenu" class="evitement">Aller au contenu</a>
+    <a href="#footer" class="evitement">Aller au pied de page</a>
+
     <header>
-        <a href="./index.html" title="Accueil">
-          <img src="./img/logo.svg" alt="" />
-        </a>
-        <nav>
-          <ul class="list-link">
-            <li><a href="#" title="Actualité">Actualité</a></li>
-            <li><a href="#" title="Nos célébrités">Nos célébrités</a></li>
-            <li><a href="#" title="Théâtre Grévin">Théâtre Grévin</a></li>
-            <li>
-              <a href="#" title="Préparer votre visite">Préparer votre visite</a>
-            </li>
-            <li>
-              <a href="#" class="btn music">La musique est à l'honneur</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="nav">
+      <a href="./index.html" title="Accueil">
+        <img src="./img/logo.svg" alt="" />
+      </a>
+      <nav>
+        <ul class="list-link">
+          <li><a href="#" title="Actualité">Actualité</a></li>
+          <li><a href="#" title="Nos célébrités">Nos célébrités</a></li>
+          <li><a href="#" title="Théâtre Grévin">Théâtre Grévin</a></li>
           <li>
-            <a
-              href="https://fr-fr.facebook.com/grevinparis/"
-              target="_blank"
-              rel="nofollow"
-              class="fa fa-facebook-official"
-              title="Le Musée Grévin sur Facebook"
-            ></a>
+            <a href="#" title="Préparer votre visite">Préparer votre visite</a>
           </li>
           <li>
-            <a
-              href="https://www.instagram.com/grevin_paris/"
-              target="_blank"
-              rel="nofollow"
-              class="fa fa-instagram"
-              title="Le Musée Grévin sur Instagram"
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://twitter.com/grevin_paris"
-              target="_blank"
-              rel="nofollow"
-              class="fa fa-twitter"
-              title="Le Musée Grévin sur Twitter"
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/user/GrevinTV"
-              target="_blank"
-              rel="nofollow"
-              class="fa fa-youtube-play"
-              title="Le Musée Grévin sur Youtube"
-            ></a>
+            <a href="#" class="btn music">La musique est à l'honneur</a>
           </li>
         </ul>
-      </header>
+      </nav>
+      <ul class="nav">
+        <li>
+          <a
+            href="https://fr-fr.facebook.com/grevinparis/"
+            target="_blank"
+            rel="nofollow"
+            class="fa fa-facebook-official"
+            title="Le Musée Grévin sur Facebook"
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/grevin_paris/"
+            target="_blank"
+            rel="nofollow"
+            class="fa fa-instagram"
+            title="Le Musée Grévin sur Instagram"
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/grevin_paris"
+            target="_blank"
+            rel="nofollow"
+            class="fa fa-twitter"
+            title="Le Musée Grévin sur Twitter"
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/user/GrevinTV"
+            target="_blank"
+            rel="nofollow"
+            class="fa fa-youtube-play"
+            title="Le Musée Grévin sur Youtube"
+          ></a>
+        </li>
+      </ul>
+    </header>
 
-      
-    <section class="section_contact" >
+    <main id="contenu">
+      <section class="section_contact">
         <h1 class="title_contact" aria-atomic="true">Contact</h1>
-        <h4 class="content_contact big_text" aria-atomic="true">Musée Grévin Paris,</h4>
-        <p class="content_contact text" aria-atomic="true">10, boulevard Montmartre 75009 Paris</p>
-        <h4 class="content_contact big_text" aria-atomic="true">Besoin d'aide ? 01 47 70 85 05</h4>
-        <p class="content_contact text" aria-atomic="true">Du lundi au dimanche de 9h à 12h30 et de 13h30 à 17h.</p>
-    </section>
+        <h4 class="content_contact big_text" aria-atomic="true">
+          Musée Grévin Paris,
+        </h4>
+        <p class="content_contact text" aria-atomic="true">
+          10, boulevard Montmartre 75009 Paris
+        </p>
+        <h4 class="content_contact big_text" aria-atomic="true">
+          Besoin d'aide ? 01 47 70 85 05
+        </h4>
+        <p class="content_contact text" aria-atomic="true">
+          Du lundi au dimanche de 9h à 12h30 et de 13h30 à 17h.
+        </p>
+      </section>
 
-    <section class="section_form">
+      <section class="section_form">
         <div id="itineraire">
-            <img src="../src/img/map-grevin-transparent-generic.png" alt="Map de l'emplacement du musée Grevin">
-            <button id="bouton_itineraire"><a href="https://www.google.fr/maps/dir//Mus%C3%A9e+Gr%C3%A9vin,+10+Boulevard+Montmartre,+75009+Paris/@48.8718378,2.3422204,15z"></a>Itineraire</button>
+          <img
+            src="../src/img/map-grevin-transparent-generic.png"
+            alt="Map de l'emplacement du musée Grevin"
+          />
+          <button id="bouton_itineraire">
+            <a
+              href="https://www.google.fr/maps/dir//Mus%C3%A9e+Gr%C3%A9vin,+10+Boulevard+Montmartre,+75009+Paris/@48.8718378,2.3422204,15z"
+            ></a
+            >Itineraire
+          </button>
         </div>
-        <form action="" method="post" id="form">
-            <select name="Sujet" id="sujet" aria-placeholder="Sujet" required>
-                <option value="sujet" aria-placeholder="Sujet">
-                    Sujet
-                </option>
-                <option value="emploi" aria-placeholder="Emploi">
-                    Emploi
-                </option>
-                <option value="cafe_grevin" aria-placeholder="Café Grevin">
-                    Café Grevin
-                </option>
-                <option value="privatisation" aria-placeholder="Privatisation">
-                    Privatisation
-                </option>
-                <option value="billeterie" aria-placeholder="Billeterie">
-                    Billeterie
-                </option>
-                <option value="groupe" aria-placeholder="Groupe">
-                    Groupe
-                </option>
-                <option value="presse" aria-placeholder="Presse">
-                    Presse
-                </option>
-                <option value="info_pratique" aria-placeholder="Informations pratiques">
-                    Informations pratiques
-                </option>
-                <option value="formuler_demande_RGPD" aria-placeholder="Formuler une demande sur vos données personnelles (RGPD)">
-                    Formuler une demande sur vos données personnelles (RGPD)
-                </option>
-            </select>
-            <input id="email" type="email" aria-required="true" placeholder="Votre courriel" required>
-            <div id="emailmessage"></div>
-            <textarea id="content" placeholder="Votre message ..." aria-required="true" required></textarea>
-            <div id="contentmessage"></div>
+        <form action="#" method="post" id="form">
+          <select name="Sujet" id="sujet" aria-placeholder="Sujet" required>
+            <option value="sujet" aria-placeholder="Sujet">Sujet</option>
+            <option value="emploi" aria-placeholder="Emploi">Emploi</option>
+            <option value="cafe_grevin" aria-placeholder="Café Grevin">
+              Café Grevin
+            </option>
+            <option value="privatisation" aria-placeholder="Privatisation">
+              Privatisation
+            </option>
+            <option value="billeterie" aria-placeholder="Billeterie">
+              Billeterie
+            </option>
+            <option value="groupe" aria-placeholder="Groupe">Groupe</option>
+            <option value="presse" aria-placeholder="Presse">Presse</option>
+            <option
+              value="info_pratique"
+              aria-placeholder="Informations pratiques"
+            >
+              Informations pratiques
+            </option>
+            <option
+              value="formuler_demande_RGPD"
+              aria-placeholder="Formuler une demande sur vos données personnelles (RGPD)"
+            >
+              Formuler une demande sur vos données personnelles (RGPD)
+            </option>
+          </select>
+          <input
+            id="email"
+            type="email"
+            aria-required="true"
+            placeholder="Votre courriel"
+            required
+          />
+          <div id="emailmessage"></div>
+          <textarea
+            id="content"
+            placeholder="Votre message ..."
+            aria-required="true"
+            required
+          ></textarea>
+          <div id="contentmessage"></div>
 
-            <div id="checkbox">
-                <div>
-                    <input type="checkbox" id="confidentialite" name="confidentialite" value="yes" required>
-                    <label for="confidentialite">En remplissant ce formulaire de contact, vous reconnaissez que vous avez lu et accepté notre politique de confidentialité relative à l'utilisation de vos donnéees personnelles.</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="newsletter" name="newsletter" value="yes" required>
-                    <label for="newsletter">J'accepte de recevoir les Newsletter de Grévin Paris</label>
-                </div>
+          <div id="checkbox">
+            <div>
+              <input
+                type="checkbox"
+                id="confidentialite"
+                name="confidentialite"
+                value="yes"
+                required
+              />
+              <label for="confidentialite"
+                >En remplissant ce formulaire de contact, vous reconnaissez que
+                vous avez lu et accepté notre politique de confidentialité
+                relative à l'utilisation de vos donnéees personnelles.</label
+              >
             </div>
-            <input id="submit" type="submit" value="Envoyer">
+            <div>
+              <input
+                type="checkbox"
+                id="newsletter"
+                name="newsletter"
+                value="yes"
+                required
+              />
+              <label for="newsletter"
+                >J'accepte de recevoir les Newsletter de Grévin Paris</label
+              >
+            </div>
+          </div>
+          <input id="submit" type="submit" value="Envoyer" />
         </form>
-    </section>
-</body>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <ul class="special-mention">
+        <li>
+          <i class="fa-solid fa-star"></i>
+          <p>Plus de 250 personnalités</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-landmark"></i>
+          <p>Un patrimoine architectural d'exception</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-award"></i>
+          <p lang="en">Tripadvisor Travelers' Choice 2020</p>
+        </li>
+      </ul>
+      <hr aria-hidden="true" />
+      <table>
+        <caption>
+          Liens vers les autres pages pour découvrir plus sur le musée Grévin
+        </caption>
+        <tr>
+          <th scope="col">Grévin</th>
+          <th scope="col">Grévin pour les professionnels</th>
+          <th scope="col">Grévin à l'international</th>
+        </tr>
+        <tr>
+          <td><a href="#">FAQ</a></td>
+          <td><a href="#">Les ateliers by Grévin</a></td>
+          <td>
+            <a href="#" lang="en">Chaplin's World by Grevin</a>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="#">Les coulisses</a></td>
+          <td><a href="#">Location d'espaces</a></td>
+          <td><a href="#" lang="en">Bugs Bunny by Grevin</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">Presse</a></td>
+          <td><a href="#">Scolaires/ Centre de loisirs</a></td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+      <hr aria-hidden="true" />
+      <ul class="social-list">
+        <li>
+          <a
+            href="https://fr-fr.facebook.com/grevinparis/"
+            target="_blank"
+            rel="nofollow"
+            class="fa fa-facebook-official"
+            title="Le Musée Grévin sur Facebook"
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/grevin_paris/"
+            target="_blank"
+            rel="nofollow"
+            class="fa fa-instagram"
+            title="Le Musée Grévin sur Instagram"
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/grevin_paris"
+            target="_blank"
+            rel="nofollow"
+            class="fa fa-twitter"
+            title="Le Musée Grévin sur Twitter"
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/user/GrevinTV"
+            target="_blank"
+            rel="nofollow"
+            class="fa fa-youtube-play"
+            title="Le Musée Grévin sur Youtube"
+          ></a>
+        </li>
+      </ul>
+      <p>
+        CGV Mentions légales Règlement intérieur Cookies Données personnelles
+        Ethique et conformité Tarifs caisse
+      </p>
+    </footer>
+  </body>
 </html>

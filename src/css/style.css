@@ -60,7 +60,8 @@ header .fa {
   text-transform: uppercase;
   transition: background-color 0.1s ease;
 }
-.music:hover {
+.music:hover,
+.music:focus {
   color: #fff;
   animation: btn-twerk 0.2s linear infinite;
 }

@@ -13,6 +13,14 @@
     <title>Bienvenue à Grévin : un musée de cire à Paris | Musée Grévin</title>
   </head>
   <body>
+    <input
+      type="text"
+      style="position: absolute; opacity: 0; pointer-events: none"
+      autofocus
+    />
+    <a href="#contenu" class="evitement">Aller au contenu</a>
+    <a href="#footer" class="evitement">Aller au pied de page</a>
+
     <header>
       <a href="./index.html" title="Accueil">
         <img src="./img/logo.svg" alt="" />
@@ -70,12 +78,12 @@
       </ul>
     </header>
 
-    <main>
+    <main id="contenu">
       <section class="hero">
         <div class="medio-block-info">
-          <h1>
-            <span>Bienvenue</span>
-            <div>au Musée Grévin</div>
+          <h1 role="text">
+            <span class="first">Bienvenue</span>
+            <span class="sec">au Musée Grévin</span>
           </h1>
           <div class="btn-container">
             <a href="#" class="primary">
@@ -145,7 +153,8 @@
         </div>
       </section>
     </main>
-    <footer>
+
+    <footer id="footer">
       <ul class="special-mention">
         <li>
           <i class="fa-solid fa-star"></i>
