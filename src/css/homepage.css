@@ -197,6 +197,10 @@
   line-height: 1.5;
   text-align: center;
 }
+.contact-container hr {
+  width: 80%;
+  border: 1px solid #bf0f3d;
+}
 .btn-contact-container {
   background-color: #bf0f3d;
   width: 20%;
@@ -218,15 +222,15 @@
   position: absolute;
   transition: all 0.2s ease;
   transform: translate(-50%, -50%);
-  right: -90%;
+  right: -120%;
   top: 50%;
 }
 .btn-contact-container:hover i {
-  right: -30%;
+  right: -35%;
 }
 .btn-contact-container:hover {
   box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 20%);
 }
 .btn-contact-container a:focus i {
-  right: -30%;
+  right: -35%;
 }
