@@ -3,6 +3,87 @@
 
 * {
     font-family: "Raleway", serif;
+    box-sizing: border-box;
+}
+
+/* Style de base */
+ul {
+    list-style-type: none;
+}
+  a {
+    text-decoration: none;
+}
+  
+  /* Header */
+header {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    background-color: white;
+    color: #fff;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 120px;
+    box-shadow: 0px 0px 20px 8px rgb(0 0 0 / 20%);
+}
+header ul {
+    display: flex;
+    gap: 12px;
+}
+header .list-link {
+    gap: 20px;
+}
+header a {
+    color: #cba210;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+header a:hover {
+    color: #bf0f3d;
+}
+header .fa {
+    font-size: 1.5rem;
+}
+
+.btn {
+    background-color: #bf0f3d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.1s ease;
+}
+
+.music:hover {
+    color: #fff;
+    animation: btn-twerk 0.2s linear infinite;
+}
+
+@keyframes btn-twerk {
+    0% {
+      border-radius: 2rem;
+    }
+    20% {
+      border-radius: 1rem 2rem 1rem 2rem;
+    }
+    40% {
+      border-radius: 2rem 1rem 2rem 1rem;
+    }
+    60% {
+      border-radius: 1rem 2rem 1rem 2rem;
+    }
+    80% {
+      border-radius: 2rem 1rem 2rem 1rem;
+    }
+    100% {
+      border-radius: 2rem 1rem 2rem 1rem;
+    }
 }
 
 body {
@@ -12,10 +93,12 @@ body {
 }
 
 .section_contact {
+    margin-top: 10rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-bottom: 20px;
+    height: 25rem;
 }
 
 .title_contact {
@@ -43,6 +126,7 @@ body {
 .section_form {
     background-color: #BF0F3D;
     color: white;
+    margin-top: 50px;
     padding: 15px;
     height: 50rem;
     display: flex;
