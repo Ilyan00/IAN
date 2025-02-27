@@ -201,75 +201,88 @@ body {
   margin-top: 7px;
   padding-top: 0;
 }
-
 .section_form {
   background-color: #bf0f3d;
   color: white;
   margin-top: 50px;
   padding: 15px;
-  height: 50rem;
+  height: auto;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#itineraire {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#itineraire img {
+  max-width: 100%;
+  height: auto;
 }
 
 #form {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  width: 100%;
+  max-width: 500px;
 }
 
-input {
-  margin: 10px;
+input,
+#sujet,
+#content {
+  margin: 10px 0;
   padding: 15px;
   border-radius: 5px;
   border: 0;
-}
-
-#sujet {
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
+  width: 100%;
 }
 
 #content {
-  margin: 10px;
-  padding: 15px;
-  border-radius: 5px;
-  border: 0;
-  height: 218px;
-}
-
-#itineraire {
-  margin-top: 15px;
+  height: 150px;
 }
 
 #checkbox {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
+  font-size: medium;
+}
+
+#bouton_itineraire,
+#submit {
+  margin-top: 15px;
+  padding: 15px 25px;
+  border-radius: 50px;
+  font-weight: bold;
   font-size: large;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
 }
 
 #bouton_itineraire {
-  margin-top: 15px;
-  padding: 15px 25px 15px 25px;
-  border-radius: 50px;
   color: white;
-  font-weight: bold;
-  font-size: large;
   background-color: transparent;
   border: 3px solid white;
 }
 
 #submit {
-  margin-top: 15px;
-  padding: 15px 25px 15px 25px;
-  border-radius: 50px;
   color: #bf0f3d;
   background-color: white;
-  font-weight: bold;
-  font-size: large;
 }
 
+@media (max-width: 768px) {
+  .section_form {
+    padding: 10px;
+  }
+
+  #checkbox {
+    font-size: small;
+  }
+}
 /* footer */
 
 footer {
