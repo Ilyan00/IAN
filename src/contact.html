@@ -3,16 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/homepage.css" />
+    <link rel="stylesheet" href="../src/css/contact.css" />
     <script
       src="https://kit.fontawesome.com/ec35368b02.js"
       crossorigin="anonymous"
     ></script>
     <link rel="icon" href="./img/icone.png" type="image/png" />
-    <title>Bienvenue à Grévin : un musée de cire à Paris | Musée Grévin</title>
+    <title>Formulaire de contact</title>
   </head>
   <body>
+    <input
+      type="text"
+      style="position: absolute; opacity: 0; pointer-events: none"
+      autofocus
+    />
+    <a tabindex="1" href="#contenu" class="evitement">Aller au contenu</a>
+    <a href="#footer" class="evitement">Aller au pied de page</a>
+
     <header>
       <a href="./index.html">
         <img src="./img/logo.svg" alt="Logo Musée Grévin" />
@@ -71,82 +78,114 @@
       </button>
     </header>
 
-    <main>
-      <section class="hero">
-        <div class="medio-block-info">
-          <h1>
-            <span>Bienvenue</span>
-            <div>au Musée Grévin</div>
-          </h1>
-          <div class="btn-container">
-            <a href="#" class="primary">
-              <i class="fa-solid fa-cart-shopping"></i>
-              Acheter vos billets
-            </a>
-            <a href="#" class="secondary"> Préparez votre visite </a>
-          </div>
-          <div class="hero-image-container">
-            <img
-              src="./img/trip-advisor-badge-white.png"
-              alt="Travellers choice TripAdvisor 2020"
-            />
-          </div>
-        </div>
-        <div class="image-container">
-          <img src="./img/hero.jpg" alt="" />
-        </div>
+    <main id="contenu">
+      <section class="section_contact">
+        <h1 class="title_contact" aria-atomic="true">Contact</h1>
+        <h4 class="content_contact big_text" aria-atomic="true">
+          Musée Grévin Paris,
+        </h4>
+        <p class="content_contact text" aria-atomic="true">
+          10, boulevard Montmartre 75009 Paris
+        </p>
+        <h4 class="content_contact big_text" aria-atomic="true">
+          Besoin d'aide ? 01 47 70 85 05
+        </h4>
+        <p class="content_contact text" aria-atomic="true">
+          Du lundi au dimanche de 9h à 12h30 et de 13h30 à 17h.
+        </p>
       </section>
 
-      <section class="offer">
-        <h2>Nos offres du moment</h2>
-        <div class="offer-container">
-          <div class="offer-image">
-            <img
-              src="./img/offre.jpg"
-              alt="La nuit au musée arrive au Grévin!"
-            />
-          </div>
-          <div class="offer-text-container">
-            <div class="text-title">
-              <i class="fa-solid fa-hat-wizard"></i>
-              <h3>La nuit au musée</h3>
-              <p>
-                Un samedi par mois, découvrez Grévin comme vous ne l'avez jamais
-                vu ! 🤩
-              </p>
+      <section class="section_form">
+        <div id="itineraire">
+          <img
+            src="../src/img/map-grevin-transparent-generic.png"
+            alt="Map de l'emplacement du musée Grevin"
+          />
+          <button id="bouton_itineraire">
+            <a
+              href="https://www.google.fr/maps/dir//Mus%C3%A9e+Gr%C3%A9vin,+10+Boulevard+Montmartre,+75009+Paris/@48.8718378,2.3422204,15z"
+            ></a
+            >Itineraire
+          </button>
+        </div>
+        <form action="#" method="post" id="form">
+          <select name="Sujet" id="sujet" aria-placeholder="Sujet" required>
+            <option value="sujet" aria-placeholder="Sujet">Sujet</option>
+            <option value="emploi" aria-placeholder="Emploi">Emploi</option>
+            <option value="cafe_grevin" aria-placeholder="Café Grevin">
+              Café Grevin
+            </option>
+            <option value="privatisation" aria-placeholder="Privatisation">
+              Privatisation
+            </option>
+            <option value="billeterie" aria-placeholder="Billeterie">
+              Billeterie
+            </option>
+            <option value="groupe" aria-placeholder="Groupe">Groupe</option>
+            <option value="presse" aria-placeholder="Presse">Presse</option>
+            <option
+              value="info_pratique"
+              aria-placeholder="Informations pratiques"
+            >
+              Informations pratiques
+            </option>
+            <option
+              value="formuler_demande_RGPD"
+              aria-placeholder="Formuler une demande sur vos données personnelles (RGPD)"
+            >
+              Formuler une demande sur vos données personnelles (RGPD)
+            </option>
+          </select>
+          <input
+            id="email"
+            type="email"
+            aria-required="true"
+            placeholder="Votre courriel"
+            required
+          />
+          <div id="emailmessage"></div>
+          <textarea
+            id="content"
+            placeholder="Votre message ..."
+            aria-required="true"
+            required
+          ></textarea>
+          <div id="contentmessage"></div>
+
+          <div id="checkbox">
+            <div>
+              <input
+                type="checkbox"
+                id="confidentialite"
+                name="confidentialite"
+                value="yes"
+                required
+              />
+              <label for="confidentialite"
+                >En remplissant ce formulaire de contact, vous reconnaissez que
+                vous avez lu et accepté notre politique de confidentialité
+                relative à l'utilisation de vos donnéees personnelles.</label
+              >
             </div>
-            <p class="price-container" role="text">
-              <span class="price-p">à partir de</span>
-              <span class="price-number">32€</span>
-              <span class="price-person">par personne</span>
-            </p>
-
-            <a href="#" class="link price-btn">
-              <i class="fa-solid fa-cart-shopping"></i>
-              Achetez vos billets
-            </a>
+            <div>
+              <input
+                type="checkbox"
+                id="newsletter"
+                name="newsletter"
+                value="yes"
+                required
+              />
+              <label for="newsletter"
+                >J'accepte de recevoir les Newsletter de Grévin Paris</label
+              >
+            </div>
           </div>
-        </div>
-      </section>
-
-      <section class="contact">
-        <div class="contact-container">
-          <h2>Contactez-nous</h2>
-          <hr aria-hidden="true" />
-          <p>
-            Si vous avez une question n'hésitez pas à cliquer sur le lien ci
-            dessous.
-          </p>
-          <div class="btn-contact-container">
-            <a href="./contact.html">
-              Contacte
-              <i class="fa-solid fa-paper-plane"></i>
-            </a>
-          </div>
-        </div>
+          <input id="submit" type="submit" value="Envoyer" />
+        </form>
       </section>
     </main>
-    <footer>
+
+    <footer id="footer">
       <ul class="special-mention">
         <li>
           <i class="fa-solid fa-star"></i>
