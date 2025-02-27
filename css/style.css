@@ -64,32 +64,6 @@ header .fa {
   text-transform: uppercase;
   transition: background-color 0.1s ease;
 }
-.music:hover,
-.music:focus {
-  color: #fff;
-  animation: btn-twerk 0.2s linear infinite;
-}
-@keyframes btn-twerk {
-  0% {
-    border-radius: 2rem;
-  }
-  20% {
-    border-radius: 1rem 2rem 1rem 2rem;
-  }
-  40% {
-    border-radius: 2rem 1rem 2rem 1rem;
-  }
-  60% {
-    border-radius: 1rem 2rem 1rem 2rem;
-  }
-  80% {
-    border-radius: 2rem 1rem 2rem 1rem;
-  }
-  100% {
-    border-radius: 2rem 1rem 2rem 1rem;
-  }
-}
-
 /* Style du menu burger */
 .burger {
   display: none;
